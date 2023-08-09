@@ -2,7 +2,7 @@
 red='\033[0;31m'
 green='\033[0;32m'
 plain='\033[0m'
-wk_dir=~/v2ray-tel-bot
+wk_dir=~/v2ray-tel-bot2
 config_dir=config
 git_url="https://github.com/TeleDark/v2ray-tel-bot.git"
 
@@ -39,7 +39,7 @@ check_python() {
         pip install --ignore-installed PyYAML
         pip install -r $wk_dir/requirements.txt
 
-        (crontab -l; echo "*/3 * * * * python3 ~/v2ray-tel-bot/login.py"; echo "@reboot python3 ~/v2ray-tel-bot/bot.py"; echo "42 2 */2 * * rm -rf ~/v2ray-tel-bot/cookies.pkl") | sort -u | crontab -
+        (crontab -l; echo "*/3 * * * * python3 ~/v2ray-tel-bot2/login.py"; echo "@reboot python3 ~/v2ray-tel-bot2/bot.py"; echo "42 2 */2 * * rm -rf ~/v2ray-tel-bot2/cookies.pkl") | sort -u | crontab -
         echo -e "\n${green}Edit 'config.yml' file, then restart the server with the 'reboot' command. The bot will start working after the server comes back up.${plain}"
 
     else 

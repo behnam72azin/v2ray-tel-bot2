@@ -4,7 +4,7 @@ green='\033[0;32m'
 plain='\033[0m'
 wk_dir=~/v2ray-tel-bot2
 config_dir=config
-git_url="https://github.com/TeleDark/v2ray-tel-bot.git"
+git_url="https://github.com/behnam72azin/v2ray-tel-bot2.git"
 
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}Fatal error：${plain} Please run this script with root privilege \n " && exit 1
